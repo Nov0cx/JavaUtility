@@ -1,5 +1,6 @@
 package de.niklas.utility.math;
 
+import de.niklas.utility.misc.Cloneable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -7,7 +8,7 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @Data
-public class Vector implements Cloneable {
+public class Vector implements Cloneable<Vector> {
 
     @Getter
     @Setter

@@ -1,10 +1,11 @@
 package de.niklas.utility.boundingboxes;
 
 import de.niklas.utility.math.Vector;
+import de.niklas.utility.misc.Cloneable;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class CubeBox implements BoundingBox, Cloneable {
+public class CubeBox implements BoundingBox, Cloneable<CubeBox> {
 
     private double minX, minY, minZ, maxX, maxY, maxZ;
 
