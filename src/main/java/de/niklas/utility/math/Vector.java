@@ -41,6 +41,27 @@ public class Vector implements Cloneable<Vector> {
         return this;
     }
 
+    public Vector add(double m) {
+        x += m;
+        y += m;
+        z += m;
+        return this;
+    }
+
+    public Vector add(double x, double y, double z) {
+        this.x += x;
+        this.y += y;
+        this.z += z;
+        return this;
+    }
+
+    public Vector add(Vector m) {
+        x += m.x;
+        y += m.y;
+        z += m.z;
+        return this;
+    }
+
     public double getLength() {
         return Math.sqrt(x * x + y * y + z * z);
     }
